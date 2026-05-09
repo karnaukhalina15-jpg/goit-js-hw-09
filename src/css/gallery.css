@@ -1,0 +1,32 @@
+.container {
+  width: 1440px;
+  height: 696px;
+  background-color: #fff;
+
+}
+.gallery {
+  width: 1128px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 24px 156px;
+  justify-content: center;
+  align-items: center;
+
+}
+.gallery-item:first-child { 
+  grid-column: span 1;
+}
+.gallery-item img {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease ;
+} 
+.gallery-item:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
